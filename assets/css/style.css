@@ -1,6 +1,272 @@
-#navigation li {
-	list-style:none;
-	display:block;
+body{
+	margin:0;
+	padding:0;
+	font-family:'Arial',serif;
+}
+
+.content_area{
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	min-height: calc(100vh - 50px);
+}
+
+.headerContainer{
+	margin: 0 auto;
+	background-color: #ffffff; /*white*/
+	height:70px;
+	line-height:70px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.headerContainer>#name-box{	
+	width:250px; 
+	background-color:#4aaaa5; 
+	color:#ffffff;
+	font-weight:bold;
+	margin-left:25px;
+	text-align:center;
+	float:left;
+	font-size:25px;
+	margin-bottom:0px;
+}
+
+.menu {
+	list-style:none; /*removes bullets/numbers*/
+	text-align: right; /*centers on screen*/
+	padding:0px 80px 20px 0px; /*top right bottom left. setting some padding to right to make it a bit indented*/
+}
+
+.menu > li{
+	display: inline-block; /* this makes list appear on one line*/
+	padding:0px 15px 0 15px; /*this gives space in between each li element*/
+}
+
+.menu > li > a{
+	text-decoration: none;
+	color: #858585;
+}
+
+.menu>li>a:hover{
+	color: #393939;
+	text-decoration:underline;
+}
+
+.mainContainer{
+	background-image:url("C:\\Users\\sranney\\Dropbox\\Bootcamp_SAR\\Assignments\\Basic-Portfolio\\assets\\images\\green_cup.png");
+	margin-top:0px;
+	width:675px;
+	top:10em;
+	float:left;
+	min-height: calc(100vh - 123px);
+	border-top:1.5px solid #696969;
+	border-bottom:5px solid #4aaaa5;
+}
+
+.mainContainer>#mainSection{
+	background-color:#ffffff;
+	width:650px;
+	float:left;
+	margin-left:12.5px;
+	margin-top:25px;
+	margin-right:12.5px;
+	min-height: calc(100vh - 170px);
+}
+
+.mainContainer>#mainSection>#mainSectionTitle{
+	height:50px;
+	margin-right:25px;
+	margin-left:25px;
+	margin-top:15px;
+	background-color:#ffffff;
+	color:#4aaaa5;
+	border-bottom: 3px solid #dddddd;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size:35px;
+	font-weight:bold;
+}
+
+#profilepic{
+	margin-left:25px;
+	margin-top:10px;
+	margin-right:25px;
+	height:200px;
+	float:left;
+}
+
+.mainContainer>#mainSection>#mainSectionParagraphs{
+	margin-left:25px;
+	margin-top:8px;
+}
+
+.mainContainer>#mainSection>#mainSectionParagraphs>p{
+	margin-left:0px;
+	margin-top:0px;
+	line-height:25px;
+}
+
+.sideBarContainer{
+	background-image:url("C:\\Users\\sranney\\Dropbox\\Bootcamp_SAR\\Assignments\\Basic-Portfolio\\assets\\images\\green_cup.png");
+	margin-top:0px;
+	width:285px;
+	top:10em;
+	min-height: calc(100vh - 123px);
+	border-top:1.5px solid #696969;
+	border-bottom:5px solid #4aaaa5;
 	float:right;
-	margin:0 0 10px 10px;
+}
+
+.sideBarContainer>#sideBar{
+	background-color:#ffffff;
+	width:260px;
+	float:left;
+	margin-left:0px;
+	margin-top:25px;
+	margin-right:12.5px;
+	height:133px;
+}
+
+.sideBarContainer>#sideBar>#sideBarSectionTitle{
+	height:35px;
+	line-height:35px;
+	margin-right:10px;
+	margin-left:10px;
+	margin-top:15px;
+	background-color:#ffffff;
+	color:#4aaaa5;
+	border-bottom: 3px solid #dddddd;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size:20px;
+	font-weight:bold;
+}
+
+.sideBarContainer>#sideBar>a>img{
+	height:65px;
+	float:left;
+	padding-left:17.5px;
+}
+
+form>input[name=Name]{
+	width:400px;
+	height:30px;
+}
+
+form>input[name=Email]{
+	width:400px;
+	height:30px;
+}
+
+form>textarea[name=Message]{
+	width:600px;
+	height:160px;
+}
+
+form>input[name=Submit]{
+	width:180px;
+	background-color:#4aaaa5; 
+	color:#ffffff;
+	text-align:center;
+	font-weight:bold;
+	float:left;
+	font-size:25px;
+	margin-bottom:15px;
+	margin-top:35px;
+	box-shadow: 0 9px #999;
+}
+
+form>input[name=Submit]:hover{
+	width:180px;
+	background-color:#347874; 
+	color:#A8A8A8;
+	text-align:center;
+	font-weight:bold;
+	float:left;
+	font-size:25px;
+	margin-bottom:15px;
+	margin-top:35px;
+	box-shadow: 0 8px #999;
+}
+
+form>input[name=Submit]:active{
+	background-color:#347874; 
+	color:#A8A8A8;
+	box-shadow: 0 4px #666;
+	transform:translateY(4px);
+}
+
+form>li{
+	margin-top:10px;
+	list-style:none;
+	margin-bottom:5px;
+	color: #656565;
+}
+
+form{
+	margin-top:10px;
+	margin-right:25px;
+	margin-left:25px;
+}
+
+#parentcontainer>#container>a>img {
+	width:100%;
+	height:100%;
+}
+
+#parentcontainer{
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#container {
+    position:relative;
+    width:250px;
+    height:175px;
+    margin-top:20px;
+    margin-left:25px;
+    margin-right:25px;
+    float:left;
+}
+
+#example {
+	position:absolute;
+   	top: 120px; 
+   	width:100%;
+   	background-color:#4aaaa5;
+   	color:#ffffff;
+   	text-align:center;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size:25px;
+	line-height:;
+}
+
+button>#previous{
+	float:left;
+
+}
+
+button>#next{
+	float:right;
+}
+
+.footerContainer{
+	background-color:#666666;
+	color:#999999;
+	height:50px; 
+	line-height:50px;
+	text-align:center;
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.clearfix::after{
+	content:"";
+	display:block;
+	clear:both;	
+}
+
+footer {
+	display: flex;
+	width: 100%;
 }

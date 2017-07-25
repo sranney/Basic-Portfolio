@@ -53,7 +53,7 @@ body{
 }
 
 .mainContainer{
-	background-image:url("C:\\Users\\sranney\\Dropbox\\Bootcamp_SAR\\Assignments\\Basic-Portfolio\\assets\\images\\green_cup.png");
+	background-image:url("../images/green_cup.png");
 	margin-top:0px;
 	width:675px;
 	top:10em;
@@ -106,7 +106,7 @@ body{
 }
 
 .sideBarContainer{
-	background-image:url("C:\\Users\\sranney\\Dropbox\\Bootcamp_SAR\\Assignments\\Basic-Portfolio\\assets\\images\\green_cup.png");
+	background-image:url("../images/green_cup.png");
 	margin-top:0px;
 	width:285px;
 	top:10em;
@@ -237,7 +237,8 @@ form{
    	text-align:center;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size:25px;
-	line-height:;
+	height:35px;
+	line-height:35px;
 }
 
 button>#previous{

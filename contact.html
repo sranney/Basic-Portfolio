@@ -2,50 +2,53 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Spencer Ranney - Personal Page - Contact</title>
+	<title>Spencer Ranney - Personal Page - Contact</title><!--what shows up in tab as page title-->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!--reset overwrites defaults put in place by browser-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!--external css code that formats html-->
 </head>
 <body>
-	<div class="content_area">
+	<div class="content_area"><!--putting everything into a div container "content_area" that 
+	will format basic things like height and width and center the content through setting margins-->
 
-		<header>
-			<div class="headerContainer">
+		<header> <!--header section - contains content for banner at top of page-->
+			<div class="headerContainer"><!--to put all of the components in one div box - allows for easier CSS formatting-->
 				<div id="name-box">Spencer Ranney</div>
-				<ul class="menu">
-					<li><a href="index.html">About</a></li>
+				<ul class="menu"><!--navigation menu - CSS will make the nav bar look pretty-->
+					<li><a href="index.html">About</a></li><!--relative path reference to file in same folder-->
 					<li>|</li>
-					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li><!--relative path reference to file in same folder-->
 					<li>|</li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="contact.html">Contact</a></li><!--relative path reference to file in same folder-->
 				</ul>
 			</div>
 		</header>
 
-		<div class="mainContainer">
-			<div id="mainSection">
-				<div id="mainSectionTitle">Contact</div>
-				<form id="formstyle" action="MAILTO:spencerranney@gmail.com?Subject=Contact%20Message" method="post" enctype="text/plain">
-					<li>Name:</li>
-					<input type="text" name="Name" placeholder="John Smith"><br>
-					<li>Email:</li>
-					<input type="text" name="Email" placeholder="example@gmail.com"><br>
-					<li>Message:</li>
-					<textarea type="text" name="Message" placeholder="You are awesome, Spencer! Great job! A++!"></textarea><br>
-					<input type="submit" name="Submit" value="Submit">
+		<div class="mainContainer"><!--contains content for left side of page, below header - this is also the space in which the background is stored-->
+			<div id="mainSection"><!--white container that contains section title and other elements of main section-->
+				<div id="mainSectionTitle">Contact</div> <!--main title of content on page-->
+				<form id="formstyle" action="MAILTO:spencerranney@gmail.com?Subject=Contact%20Message" method="post" enctype="text/plain"><!--this page contains a form for the user to enter text and send an email to me.That is the main content of this page.-->
+					<li>Name:</li><!--describes what to put into the following input box-->
+					<input type="text" name="Name" placeholder="John Smith"><br><!--creates an input text box for user to enter name. puts as a placeholder the name John Smith-->
+					<li>Email:</li><!--describes what to put into the following input box-->
+					<input type="text" name="Email" placeholder="example@gmail.com"><br><!--creates an input text box for user to enter email address. puts as a placeholder the email address example@gmail.com-->
+					<li>Message:</li><!--describes what to put into the following form element which is a text area.-->
+					<textarea type="text" name="Message" placeholder="You are awesome, Spencer! Great job! A++!"></textarea><br><!--creates a text area that will allow user to write an email body.  used textarea because that allowed me to wrap the text to go on multiple lines-->
+					<input type="submit" name="Submit" value="Submit"><!--by specifying that this input box is of type submit, it creates a button that the user can click to have the form take an action-->
 				</form>
 			</div>
 		</div>
-		<div class="sideBarContainer">
-			<div id="sideBar">
-					<div id="sideBarSectionTitle">Connect With Me:</div>
-					<a href="https://github.com/sranney" target="_blank"><img class="connectpiclink" src="assets\images\github.png" alt="github"></a>
-					<a href="https://www.linkedin.com/in/spencer-ranney/" target="_blank"><img class="connectpiclink" src="assets\images\linkedin.png" alt="linkedin"></a>
-					<a href="https://stackoverflow.com/cv/spencer-ranney" target="_blank"><img class="connectpiclink" src="assets\images\stackoverflow.png" alt="stackoverflow"></a>
+		<div class="sideBarContainer"><!--similar to mainContainer above - generates a large box that has the background stored in it - all side bar content (connectlinks) is in this div-->
+			<div id="sideBar"> <!--white container that contains section title and other elements of sidebar-->
+					<div id="sideBarSectionTitle">Connect With Me:</div><!--sidebar container title-->
+					<a href="https://github.com/sranney" target="_blank"><img class="connectpiclink" src="assets\images\github.png" alt="github"></a><!--link and img for github profile-->
+					<a href="https://www.linkedin.com/in/spencer-ranney/" target="_blank"><img class="connectpiclink" src="assets\images\linkedin.png" alt="linkedin"></a><!--link and img for linkedin profile-->
+					<a href="https://stackoverflow.com/cv/spencer-ranney" target="_blank"><img class="connectpiclink" src="assets\images\stackoverflow.png" alt="stackoverflow"></a><!--link and img for stackoverflow profile-->
 			</div>
 		</div>
 
-		<footer>
+		<footer><!--footer container-->
 			<div class = "footerContainer clearfix">
 				<div id="copyright">@ Copyright 2017 Spencer Ranney</div>
 			</div>

@@ -4,36 +4,36 @@ body{
 	font-family:'Arial',serif;
 }
 
-.content_area{
+.content_area{ /*sets height and width for all content, and centers on screen*/
 	width:960px;
 	margin-left:auto;
 	margin-right:auto;
 	min-height: calc(100vh - 50px);
 }
 
-.headerContainer{
-	margin: 0 auto;
-	background-color: #ffffff; /*white*/
+.headerContainer{/*sets format for header container*/
+	margin: 0;
+	background-color: #ffffff; /*background is white*/
 	height:70px;
 	line-height:70px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-.headerContainer>#name-box{	
+.headerContainer>#name-box{	/*sets format for the turquoise name box that shows my name*/
 	width:250px; 
-	background-color:#4aaaa5; 
-	color:#ffffff;
+	background-color:#4aaaa5; /*the background color for the namebox is turquoise*/
+	color:#ffffff;/*font is white*/
 	font-weight:bold;
-	margin-left:25px;
-	text-align:center;
-	float:left;
+	margin-left:25px;/*want it slightly separated from the left side*/
+	text-align:center; /*centers my name in the container*/
+	float:left;/*allows the nav bar to appear to the right of it*/
 	font-size:25px;
 	margin-bottom:0px;
 }
 
 .menu {
-	list-style:none; /*removes bullets/numbers*/
-	text-align: right; /*centers on screen*/
+	list-style:none; /*removes bullets*/
+	text-align: right; /*places nav bar on right of screen*/
 	padding:0px 80px 20px 0px; /*top right bottom left. setting some padding to right to make it a bit indented*/
 }
 
@@ -42,28 +42,31 @@ body{
 	padding:0px 15px 0 15px; /*this gives space in between each li element*/
 }
 
-.menu > li > a{
+.menu > li > a{/*each link and text is within an anchor tag - have to remove href style*/
 	text-decoration: none;
 	color: #858585;
 }
 
-.menu>li>a:hover{
+.menu>li>a:hover{/*want format to change when hovering mouse over links*/
 	color: #393939;
 	text-decoration:underline;
 }
 
-.mainContainer{
+.mainContainer, .sideBarContainer{
 	background-image:url("../images/green_cup.png");
+}
+
+.mainContainer{/*sets style and dimensions for mainContainer*/
 	margin-top:0px;
 	width:675px;
 	top:10em;
-	float:left;
-	min-height: calc(100vh - 123px);
-	border-top:1.5px solid #696969;
-	border-bottom:5px solid #4aaaa5;
+	float:left;/*set so that sideBar container can sit to the right of mainContainer*/
+	min-height: calc(100vh - 123px); /*used for sticky footer*/
+	border-top:1.5px solid #696969; /*setting top border as seen in provided picture*/
+	border-bottom:5px solid #4aaaa5; /*setting bottom border as seen in provided picture*/
 }
 
-.mainContainer>#mainSection{
+.mainContainer>#mainSection{/*sets format for content div for main section of pages*/
 	background-color:#ffffff;
 	width:650px;
 	float:left;
@@ -73,11 +76,9 @@ body{
 	min-height: calc(100vh - 170px);
 }
 
-.mainContainer>#mainSection>#mainSectionTitle{
+.mainContainer>#mainSection>#mainSectionTitle{/*sets format for section title*/
 	height:50px;
-	margin-right:25px;
-	margin-left:25px;
-	margin-top:15px;
+	margin:15px 25px 25px 0px;
 	background-color:#ffffff;
 	color:#4aaaa5;
 	border-bottom: 3px solid #dddddd;
@@ -86,28 +87,8 @@ body{
 	font-weight:bold;
 }
 
-#profilepic{
-	margin-left:25px;
-	margin-top:10px;
-	margin-right:25px;
-	height:200px;
-	float:left;
-}
-
-.mainContainer>#mainSection>#mainSectionParagraphs{
-	margin-left:25px;
-	margin-top:8px;
-}
-
-.mainContainer>#mainSection>#mainSectionParagraphs>p{
-	margin-left:0px;
-	margin-top:0px;
-	line-height:25px;
-}
-
-.sideBarContainer{
-	background-image:url("../images/green_cup.png");
-	margin-top:0px;
+.sideBarContainer{ /*sets container for sidebar to have similar formatting as maincontainer - background set above with mainContainer*/
+	margin:0px;
 	width:285px;
 	top:10em;
 	min-height: calc(100vh - 123px);
@@ -116,22 +97,18 @@ body{
 	float:right;
 }
 
-.sideBarContainer>#sideBar{
+.sideBarContainer>#sideBar{/*sets white box within sidebar container*/
 	background-color:#ffffff;
 	width:260px;
 	float:left;
-	margin-left:0px;
-	margin-top:25px;
-	margin-right:12.5px;
+	margin:25px 12.5px 0px 0px;
 	height:133px;
 }
 
-.sideBarContainer>#sideBar>#sideBarSectionTitle{
+.sideBarContainer>#sideBar>#sideBarSectionTitle{/*sets sidebar title container format*/
 	height:35px;
 	line-height:35px;
-	margin-right:10px;
-	margin-left:10px;
-	margin-top:15px;
+	margin:15px 10px 0px 10px;
 	background-color:#ffffff;
 	color:#4aaaa5;
 	border-bottom: 3px solid #dddddd;
@@ -140,11 +117,30 @@ body{
 	font-weight:bold;
 }
 
-.sideBarContainer>#sideBar>a>img{
+.sideBarContainer>#sideBar>a>img{/*sets image format for side bar connect with me pics*/
 	height:65px;
 	float:left;
 	padding-left:17.5px;
 }
+
+/*sets CSS for about me exclusive content*/
+
+#profilepic{ /*sets margins and height for profile picture - width will be set to keep dimensions*/
+	margin:10px 25px 0px 25px;
+	height:200px;
+	float:left; /*want paragraph to appear next to picture*/
+}
+
+.mainContainer>#mainSection>#mainSectionParagraphs{
+	margin:8px 0px 0px 25px;
+}
+
+.mainContainer>#mainSection>#mainSectionParagraphs>p{
+	margin:0px;
+	line-height:25px;
+}
+
+/*sets format for contact exclusive content*/
 
 form>input[name=Name]{
 	width:400px;
@@ -171,10 +167,12 @@ form>input[name=Submit]{
 	font-size:25px;
 	margin-bottom:15px;
 	margin-top:35px;
-	box-shadow: 0 9px #999;
+	box-shadow: 0 9px #999;/*places a shadow under submit button*/
 }
 
-form>input[name=Submit]:hover{
+/*animation for submit button*/
+
+form>input[name=Submit]:hover{/*changes style when user hovers over button*/
 	width:180px;
 	background-color:#347874; 
 	color:#A8A8A8;
@@ -182,12 +180,11 @@ form>input[name=Submit]:hover{
 	font-weight:bold;
 	float:left;
 	font-size:25px;
-	margin-bottom:15px;
-	margin-top:35px;
+	margin:35px 0px 15px 0px;
 	box-shadow: 0 8px #999;
 }
 
-form>input[name=Submit]:active{
+form>input[name=Submit]:active{/*when the user clicks the submit button, shifts the button downwards for a little animation*/
 	background-color:#347874; 
 	color:#A8A8A8;
 	box-shadow: 0 4px #666;
@@ -202,15 +199,10 @@ form>li{
 }
 
 form{
-	margin-top:10px;
-	margin-right:25px;
-	margin-left:25px;
+	margin:10px 25px 0px 25px;
 }
 
-#parentcontainer>#container>a>img {
-	width:100%;
-	height:100%;
-}
+/*sets format for portfolio exclusive content*/
 
 #parentcontainer{
 	width:600px;
@@ -222,10 +214,13 @@ form{
     position:relative;
     width:250px;
     height:175px;
-    margin-top:20px;
-    margin-left:25px;
-    margin-right:25px;
+	margin:20px 25px 0px 25px;
     float:left;
+}
+
+#parentcontainer>#container>a>img {
+	width:100%;
+	height:100%;
 }
 
 #example {
@@ -241,14 +236,14 @@ form{
 	line-height:35px;
 }
 
-button>#previous{
-	float:left;
-
+/*sets clear fix pseudo class - used to clear floats*/
+.clearfix::after{
+	content:"";
+	display:block;
+	clear:both;	
 }
 
-button>#next{
-	float:right;
-}
+/*sets format for footer*/
 
 .footerContainer{
 	background-color:#666666;
@@ -259,12 +254,6 @@ button>#next{
 	width:960px;
 	margin-left:auto;
 	margin-right:auto;
-}
-
-.clearfix::after{
-	content:"";
-	display:block;
-	clear:both;	
 }
 
 footer {

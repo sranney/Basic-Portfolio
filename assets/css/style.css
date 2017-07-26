@@ -132,7 +132,7 @@ body{
 }
 
 .mainContainer>#mainSection>#mainSectionParagraphs{
-	margin:8px 0px 0px 25px;
+	margin:8px 25px 0px 25px;
 }
 
 .mainContainer>#mainSection>#mainSectionParagraphs>p{

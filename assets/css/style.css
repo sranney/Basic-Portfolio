@@ -78,7 +78,7 @@ body{
 
 .mainContainer>#mainSection>#mainSectionTitle{/*sets format for section title*/
 	height:50px;
-	margin:15px 25px 25px 0px;
+	margin:15px 0px 25px 25px;
 	background-color:#ffffff;
 	color:#4aaaa5;
 	border-bottom: 3px solid #dddddd;
